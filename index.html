@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories Zone Records - Livre d'Or Vidéo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Ajoutez du style à vos sections */
+      section {
+          padding: 60px 0;
+      }
+
+      #features, #pricing, #contact {
+          min-height: 100vh; /* Assurez-vous que chaque section ait une hauteur suffisante pour la visibilité */
+      }
+  </style>
+</head>
+<body>
+  
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="./src/img/logo.png" alt="Logo" style="height: 60px;">
+    </a>
+
+    <!-- Bouton menu (mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Liens du menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Concept</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Prix</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <!-- Bouton inscription/connexion -->
+        <li class="nav-item">
+          <a class="btn btn-primary text-white" href="https://calendly.com/memories-zone-records/presentation?month=2024-12"  role="button">Réserver un appel</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section id="hero" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Partie texte -->
+      <div class="col-md-6">
+        <h1 class="display-4">Livre d'or Vidéo</h1>
+        <p class="lead">Une nouvelle vision de la vidéo souvenir.</p>
+        <a href="#features" class="btn btn-primary">Découvrir nos services</a>
+      </div>
+      <!-- Partie image -->
+      <div class="col-md-6">
+        <img src="./src/img/hero.jpeg" alt="Image Hero" class="img-fluid rounded shadow-lg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Espace blanc en bas de la page -->
+<section class="py-5" style="background-color: #f8f9fa;">
+  <!-- Espace vide ou contenu supplémentaire -->
+</section>
+
+
+
+<section id="features" class="py-5 bg-light">
+  <h2 class="text-center">Concept</h2>
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Colonne gauche : fonctionnalités -->
+      <div class="col-md-6">
+        <div class="feature-card text-start p-4">
+          <h4>Personnalisation</h4>
+          <p>Créez une messagerie personnalisée pour que vos invités l'entendent avant de décrocher le téléphone.</p>
+        </div>
+        <div class="feature-card text-start p-4">
+          <h4>Enregistrement Vidéo</h4>
+          <p>Installation d’un coin vidéo élégant à votre événement et enregistrement des vidéos.</p>
+        </div>
+        <div class="feature-card text-start p-4">
+          <h4>Montage Vidéo</h4>
+          <p>Un montage soigné pour chaque événement, afin de garder des souvenirs mémorables.</p>
+        </div>
+      </div>
+
+      <!-- Colonne droite : vidéo -->
+      <div class="col-md-6">
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <video class="d-block w-50" controls>
+                <source src="./src/videos/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="carousel-item">
+              <video class="d-block w-50" controls>
+                <source src="./src/videos/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <button class="carousel-control-prev custom-control" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next custom-control" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-5">
+  <div class="container">
+      <h2 class="text-center mb-4">Tarifs</h2>
+      <div class="row align-items-center">
+          <!-- Carte du forfait -->
+          <div class="col-md-6">
+              <div class="card card-premium">
+                  <div class="card-header">Forfait UNIQUE - 5h</div>
+                  <div class="card-body">
+                      <h4 class="text-center">À partir de 299€</h4>
+                      <ul>
+                          <li>Vidéo 4K avec montage inclus.</li>
+                          <li>Téléphone personnalisé pour vos invités.</li>
+                          <li>Tarification basée sur :</li>
+                          <ul>
+                              <li>Lieu de l’événement.</li>
+                              <li>Heures supplémentaires.</li>
+                              <li>Options personnalisées.</li>
+                          </ul>
+                      </ul>
+                      <button class="btn btn-primary w-100">Réserver maintenant</button>
+                  </div>
+              </div>
+          </div>
+          <!-- Description détaillée -->
+          <div class="col-md-6">
+              <div>
+                  <h3>Découvrez nos services en détail</h3>
+                  <p>
+                      Notre forfait UNIQUE vous propose une expérience complète pour immortaliser vos moments les plus précieux. Grâce à notre installation élégante, vos invités pourront laisser des messages vidéo en toute simplicité, avec une touche d’originalité grâce à notre téléphone rétro personnalisé. 
+                  </p>
+                  <p>
+                      En plus du tournage, notre équipe réalise un montage professionnel en 4K pour offrir un rendu exceptionnel à vos souvenirs.
+                  </p>
+                  <p>
+                      Vous avez des questions ou souhaitez échanger directement avec nous ? 
+                      <a href="https://calendly.com/memories-zone-records/presentation?month=2024-12"  target="_blank" >Réservez un appel via Calendly</a> et discutons de votre projet !
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Contactez-nous</h2> <!-- Espace ajouté sous le titre -->
+    <div class="row">
+      <!-- Réservation d'appel Calendly (Intégré Inline) -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-4">Réservez un appel !</h4>
+        <!-- Calendly Inline Embed Code -->
+        <div id="calendly-inline-widget" class="calendly-widget-container"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <script type="text/javascript">
+          Calendly.initInlineWidget({
+            url: 'https://calendly.com/memories-zone-records/presentation?month=2024-12',
+            parentElement: document.getElementById('calendly-inline-widget'),
+            prefill: {},
+            utm: {}
+          });
+        </script>
+      </div>
+
+      <!-- Liens vers Instagram et Email -->
+      <div class="col-md-6 d-flex justify-content-center align-items-center"> <!-- Flexbox centré horizontalement et verticalement -->
+        <div class="text-center"> <!-- Assurez-vous que le texte à l'intérieur est bien centré -->
+          <p>Vous pouvez également nous contacter directement :</p>
+          <p>
+            <a href="mailto:memories.zone.records@gmail.com" class="btn btn-light mb-2">Envoyer un Email : memories.zone.records@gmail.com</a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com/memories.zone.records" target="_blank" class="btn btn-light mb-2">Suivez-nous sur Instagram</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p>&copy; 2024 Memories Zone Records - Tous droits réservés</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+
+.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
+  background-color: #dedede;
+}
+/* =================== Personnalisation de la barre de navigation */
+.navbar {
+  background-color: #f2ebdf; /* Couleur de fond de la barre */
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère sous la barre */
+}
+
+/* Changer la couleur des liens */
+.navbar-nav .nav-link {
+  color: #4b3727; /* Couleur des liens */
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #c8b097; /* Couleur au survol des liens */
+}
+
+/* Personnalisation du bouton d'inscription */
+.navbar-nav .btn-primary {
+  background-color: #af9d92;
+  border-color: #af9d92;
+  padding: 8px 20px;
+}
+
+.navbar-nav .btn-primary:hover {
+  background-color: #c8b097;
+  border-color: #c8b097;
+}
+
+/* Réduire la taille des éléments sur les petits écrans */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 30px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
+
+/* ============================= FIN NAV BAR ============================================ */
+
+/* ======================== HERO SECTION ===================================================*/
+
+#hero {
+  background-color: #f2ebdf; /* Fond doux et clair */
+  padding-top: 100px; /* Espacement du haut pour que le texte ne soit pas trop proche du bord supérieur */
+  padding-bottom: 50px; /* Espacement du bas pour ajouter de l'air sous la section */
+  min-height: 70vh; /* Taille minimale de la section pour qu'elle occupe au moins 70% de la hauteur de l'écran */
+}
+
+#hero h1 {
+  font-size: 3.5rem; /* Taille du titre principal */
+  font-weight: 700;
+  margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+#hero p {
+  font-size: 1.25rem; /* Taille du texte secondaire */
+  margin-bottom: 30px; /* Espacement sous le texte */
+}
+
+#hero .btn-primary {
+  background-color: #af9d92; /* Couleur du bouton */
+  border-color: #af9d92;
+/*  font-size: 1.1rem; /* Taille de la police dans le bouton */
+  padding: 10px 30px; /* Espacement intérieur du bouton */
+  /*text-transform: uppercase;*/
+}
+
+#hero .btn-primary:hover {
+  background-color: #c8b097;
+  border-color: #c8b097;
+}
+
+#hero img {
+  max-width: 100%; /* L'image prend toute la largeur disponible */
+  height: auto; /* Respecte les proportions */
+  border-radius: 10px; /* Coins arrondis pour l'image */
+}
+
+#hero .container {
+  max-width: 1200px; /* Limite la largeur de la section pour une meilleure lisibilité */
+}
+
+#hero .col-md-6 {
+  padding: 0 20px; /* Ajout d'espaces internes entre les colonnes */
+}
+
+
+/* ============================ FIN HERO SECTION =============================================*/
+
+/* Body and global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2ebdf; /* Utilisation de la couleur de fond claire */
+    color: #4b3727; /* Texte principal en couleur foncée */
+  }
+  
+  /* Hero section */
+  .hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #c8b097; /* Couleur douce pour le fond de l'image */
+  }
+  
+  .hero h1 {
+    color: #000000; /* Texte principal noir */
+  }
+  
+  .hero p {
+    color: #af9d92; /* Texte secondaire avec une couleur douce */
+  }
+  
+  /* Feature Cards */
+  .feature-card {
+    background-color: #dedede; /* Fond clair pour les cartes de fonctionnalités */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 15px;
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+
+/* ============================================== VIDEO CSS ================================== */
+ 
+#videoCarousel .carousel-inner {
+  display: flex;
+  justify-content: space-evenly; /* Centre horizontalement la vidéo */
+  align-items: center; /* Centre verticalement la vidéo */
+  height: 100%; /* Permet d'étendre la hauteur du carousel pour le centrage vertical */
+}
+
+.carousel-item video {
+  max-width: 90%; /* Empêche la vidéo de déborder horizontalement */
+  max-height: 90%; /* Empêche la vidéo de déborder verticalement */
+  object-fit: cover;
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    gap: 50px;
+  }
+
+  .custom-control {
+    background-color: #4b3727; /* Bleu foncé pour le fond */
+    color: white;
+    border-radius: 50%; /* Bord arrondi */
+    border: none;
+    padding: 10px;
+  }
+  
+  .custom-control:hover {
+    background-color: #c8b097; /* Bleu encore plus foncé au survol */
+  }
+ 
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px; /* Taille ajustée pour les boutons */
+    height: 50px;
+    top: 50%;
+    /*transform: translateY(-10%);*/
+    z-index: 10; /* Assurer que les boutons restent au-dessus de la vidéo */
+  }
+
+  .carousel-control-prev {
+    left: 100px; /* Ajuster la distance entre le bord gauche et la vidéo */
+  }
+  
+  .carousel-control-next {
+    right: 10px; /* Ajuster la distance entre le bord droit et la vidéo */
+  }
+
+  /* =====================================================================================================*/
+  /* Pricing section */
+  
+  .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .card-header {
+    background-color: #4b3727; /* Utilisation de la couleur foncée pour l'en-tête */
+    color: #f2ebdf; /* Texte clair pour contraste 
+  }
+  
+  .card-body {
+    background-color: #c8b097; /* Couleur de fond douce pour les cartes de prix */
+  }
+  
+
+  .card-body h3 {
+    color: #000000; /* Texte principal pour les prix */
+  }
+  
+  .card-body a {
+    background-color: #af9d92; /* Boutons dans une couleur douce et naturelle */
+    color: white;
+  }
+
+  .card-body a:hover {
+    background-color: #4b3727; /* Hover en couleur foncée */
+  }
+
+
+/* TEST */
+/* Body and global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2ebdf; /* Couleur de fond claire */
+    color: #4b3727; /* Texte principal en couleur foncée */
+  }
+  
+  /* Forfaits */
+  .card-base {
+    background-color: #dedede; /* Couleur douce pour le forfait de base */
+    color: #4b3727; /* Texte foncé */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 25px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-premium {
+    background-color: #af9d92; /* Beige pour le forfait premium */
+    color: #000000; /* Texte noir */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 25px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-vip {
+    background-color: #4b3727; /* Marron foncé pour le forfait VIP */
+    color: #f2ebdf; /* Texte clair */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 25px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effects for the cards */
+  .card-base:hover,
+  .card-premium:hover,
+  .card-vip:hover {
+    transform: translateY(-10px); /* Légère animation au survol */
+  }
+  
+  /* Bouton "Réserver maintenant" */
+  .btn.btn-primary.btn-lg {
+    background-color: #af9d92; /* Couleur de fond douce */
+    color: #f2ebdf; /* Texte clair */
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  button.reserve-now {
+    background-color: #af9d92; /* Couleur de fond douce */
+    color: #f2ebdf; /* Texte clair */
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  button.reserve-now:hover {
+    background-color: #4b3727; /* Changement de couleur au survol */
+    color: #f2ebdf; /* Assurer que le texte reste clair */
+  }
+  
+  /* Layout for cards */
+  .container {
+    margin-top: 50px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .col-md-4 {
+    margin-bottom: 30px;
+  }
+  
+  
+  /* Form styling */
+  #contact form input,
+  #contact form textarea {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #af9d92; /* Bordure douce */
+    padding: 10px;
+  }
+  
+  #contact button {
+    background-color: #4b3727; /* Fond du bouton en couleur foncée */
+    color: white;
+  }
+  
+  #contact button:hover {
+    background-color: #c8b097; /* Hover léger */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f2ebdf; /* Footer en noir */
+    color: #f2ebdf; /* Texte clair sur fond noir */
+  }
+  
+  /*================ CALENDLY*/
+  /* Délimitation de la section Calendly */
+.calendly-widget-container {
+  border: 2px solid #fff; /* Bordure blanche pour délimiter */
+  border-radius: 10px; /* Coins arrondis */
+  padding: 20px; /* Espacement interne */
+  background-color: #333; /* Fond gris clair pour la section Calendly */
+  max-width: 100%; /* Pas de débordement */
+  overflow: hidden; /* S'assure que rien ne déborde */
+}
+
+/* Ajustement de la taille de l'iframe Calendly */
+#calendly-inline-widget {
+  min-width: 100%;
+  max-width: 100%;
+  height: 630px; /* Taille fixe ou ajustable selon le besoin */
+  overflow: hidden;
+}
+
+/* Personnalisation du bouton "Réserver maintenant" */
+.card-premium .btn-primary {
+  background-color: #af9d92;
+  border-color: #af9d92;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-premium .btn-primary:hover {
+  background-color: #4b3727;
+  border-color: #fff;
+}
