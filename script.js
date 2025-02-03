@@ -12,9 +12,11 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
       utm: {}
     });
   };
+
+
   window.onload = function() {
     // Rediriger vers la page d'accueil
-    window.location.href = '/'; // Remplacez '/' par le chemin de votre page d'accueil si nécessaire
+    window.location.href = 'https://memorieszone.com/'; // Remplacez '/' par le chemin de votre page d'accueil si nécessaire
 };
 
 
