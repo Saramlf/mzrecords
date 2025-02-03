@@ -377,6 +377,16 @@ footer {
         min-width: 150px;
     }
 
+    .button-container {
+        position: relative; /* Changer en position relative sur mobile */
+        bottom: auto; /* Réinitialiser la position */
+        top: auto;
+        left: auto;
+        transform: none; /* Supprimer la transformation */
+        margin-top: 20px; /* Ajouter une marge en haut */
+        padding: 20px; /* Ajouter un padding pour l'espace */
+    }
+
     .video-container video {
         max-width: 100%;
     }
