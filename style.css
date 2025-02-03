@@ -19,7 +19,7 @@ html, body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh; /* Utiliser min-height au lieu de height */
+    height: 90vh;
     width: 100%;
     background: url('./img/hero.png') no-repeat center center/cover;
     position: relative;
