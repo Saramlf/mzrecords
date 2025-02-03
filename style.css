@@ -19,7 +19,7 @@ html, body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh; /* Utiliser min-height au lieu de height */
     width: 100%;
     background: url('./img/hero.png') no-repeat center center/cover;
     position: relative;
@@ -376,16 +376,7 @@ footer {
         padding: 8px 16px;
         min-width: 150px;
     }
-
-    .button-container {
-        position: relative; /* Changer en position relative sur mobile */
-        bottom: auto; /* Réinitialiser la position */
-        top: auto;
-        left: auto;
-        transform: none; /* Supprimer la transformation */
-        margin-top: 20px; /* Ajouter une marge en haut */
-        padding: 20px; /* Ajouter un padding pour l'espace */
-    }
+    
 
     .video-container video {
         max-width: 100%;
